@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log In or Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="facebook-header">
+            <div class="logo">facebook</div>
+        </div>
+        
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Login</h2>
+                
+                <div class="error-message">
+                    <img src="error.png" alt="Error" class="error-icon">
+                    <span>Please enable cookies to login.</span>
+                </div>
+                
+                <form id="login-form">
+                    <div class="input-group">
+                        <label for="email">Email or Phone:</label>
+                        <input type="text" id="email" name="email" autocomplete="off">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" autocomplete="off">
+                        <div class="forgot-password"><a href="#" id="forgot-link">Forgot your password?</a></div>
+                    </div>
+                    
+                    <button type="submit" id="login-button">Log In</button>
+                </form>
+                
+                <div class="signup">
+                    <p>Not a member? <a href="#" id="signup-link">Sign up now</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>This is an educational demonstration only. No actual data collection occurs on this page.</p>
+        </footer>
+    </div>
+    
+    <!-- Signup frame -->
+    <div id="signup-frame" class="frame">
+        <div class="frame-content">
+            <h2>Sign Up</h2>
+            <div class="close-button">&times;</div>
+            <form id="signup-form">
+                <div class="input-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="signup-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">New Password:</label>
+                    <input type="password" id="signup-password" name="signup-password" required>
+                </div>
+                <div class="input-group">
+                    <label for="birthdate">Birthday:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="input-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                </div>
+                <button type="submit" id="signup-button">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Forgot password frame -->
+    <div id="forgot-frame" class="frame">
+        <div class="frame-content">
+            <h2>Find Your Account</h2>
+            <div class="close-button">&times;</div>
+            <p>Please enter your email or mobile number to search for your account.</p>
+            <form id="forgot-form">
+                <div class="input-group">
+                    <label for="recovery-email">Email or Phone:</label>
+                    <input type="text" id="recovery-email" name="recovery-email" required>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="cancel-button">Cancel</button>
+                    <button type="submit" id="search-button">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
